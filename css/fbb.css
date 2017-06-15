@@ -1,0 +1,36 @@
+img.fbb-title {
+    width: 100px;
+    height: 100px;
+}
+
+/* This is to make the nav social vertically align with the copyright*/
+footer {
+    line-height: 32px;
+}
+
+p#foot {
+    display: inline;
+    vertical-align: middle;
+}
+
+nav#social {
+    float: right;
+    font-size: 32px;
+    display: inline;
+}
+
+/*This is to make the nav vertically align in the middle*/
+div#anchor {
+    line-height: 100px;
+}
+
+nav#left-nav {
+    float:right;
+    display: inline;
+    vertical-align: middle;
+}
+
+div#center {
+    text-align: center;
+    background-color: #F6F6F6;
+}
