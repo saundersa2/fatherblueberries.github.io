@@ -7,10 +7,26 @@ $(document).ready(function () {
         var newsLink = $("#news-link");
         var eventsLink = $("#events-link");
         var shopLink = $("#shop-link");
+
+        //$("#center").css("background-image", 'url(images/FBB_Main.jpg)');
+        //$("#center").css("background-size", "cover");
+        $("#burt").flip();
+        $("#josiah").flip();
+        $("#chuck").flip();
+        $("#cj").flip();
+        $("#nick").flip();
        
         indexLink.click(function() {
             center.innerHTML = "";
-            center.load("meet_the_band.html");
+            center.load("meet_the_band.html", function() {
+                //$("#center").css("background-image", 'url(images/FBB_Main.jpg)');
+                //$("#center").css("background-size", "cover");
+                $("#burt").flip();
+                $("#josiah").flip();
+                $("#chuck").flip();
+                $("#cj").flip();
+                $("#nick").flip();
+            });
         });
 
         musicLink.click(function() {
