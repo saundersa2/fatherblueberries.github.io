@@ -1,30 +1,65 @@
 <h1>Music</h1>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- buttons for each song-->
+<script>
+$(document).ready(function(){
+    $("#button_smileback").click(function(){
+        $(".songlink").hide();
+        $("#lyricsfill").html("A blissful state of mind unwinds<br>And it rapidly takes its place when.<br>Trying to find the time thats mine<br/>Though this world is a gruesome playpen.<br/>Blasphemy is the key to ignite a war of nations<br/>Look around and you will see <br/>Ignorance connects the relation.<br/><br/>Its sad to see that society won't question their reality.<br/>Its sad to see their reality.<br/><br/>And I want to fly high.<br/>And I want to touch the sky.<br/>And I want to fly with you.<br/>Cause I think I love you.<br/><br/>Happiness what can it be<br/>Look back through those memories<br/>Life and its monotony keeps holding back you and me<br/>So Fuck all this money it will never set you free<br/>Find the love that gives you wings and fly with FBB<br/><br/>Its sad to see that society won't question their reality.<br/>Its sad to see their reality.<br/><br/>And I want to fly high.<br/>And I want to touch the sky.<br/>And I want to fly with you. <br/>Cause I love you.<br/>Yes i do.<br/><br/>So smile back cause shits wack<br/>I looked outside and had a heart attack.<br/>And life's too short for all this hate and regret.<br/>cause last time i check it could be more simply kept<br/>But dont get me wrong this life can be tough.<br/>Just pull up your pants and brush it all off.<br/>You only get one so find that love<br/>Look past that bullshit<br/>And dont play dumb.<br/>And smile back.");
+        $("#song_smileback").slideToggle();
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#button_pcp").click(function(){
+        $(".songlink").hide();
+        $("#song_pcp").slideToggle();
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#button_lady").click(function(){
+        $(".songlink").hide();
+        $("#song_lady").slideToggle();
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#button_feelgood").click(function(){
+        $(".songlink").hide();
+        $("#song_feelgood").slideToggle();
+    });
+});
+</script>
 <div style="height:100%; margin-top:50px;">
     <div class="small-box">
         <table class="table table-hover" style="clear:none;">
             <tr>
                 <td>
-                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                    <i id="button_smileback" class="fa fa-play-circle-o" aria-hidden="true"></i>
                     Smile Back <p class="inline-right">4:20<p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                    <i id="button_pcp" class="fa fa-play-circle-o" aria-hidden="true"></i>
                     Police Car Panic <p class="inline-right">2:14</p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                    <i id="button_lady" class="fa fa-play-circle-o" aria-hidden="true"></i>
                     Be My Lady <p class="inline-right">4:28</p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <i class="fa fa-play-circle-o" aria-hidden="true"></i> 
-                    Five O'Clock <p class="inline-right">2:00</p>
+                    <i id="button_feelgood" class="fa fa-play-circle-o" aria-hidden="true"></i> 
+                    Feel Good Inc. <p class="inline-right">2:00</p>
                 </td>
             </tr>
             <tr>
@@ -54,7 +89,15 @@
         </table>
     </div>
 
-    <img src="images/sample_cover.png" style="float:right; margin-right:150px; width: 350px; height: 300px;"/>
+    <!--<img src="images/sample_cover.png" style="float:right; margin-right:150px; width: 350px; height: 300px;"/>-->
+   <iframe class="songlink" id="song_smileback" width="350px" style="display:none;" height="300px" float="right" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/299346091&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+   <iframe class="songlink" id="song_pcp" width="350px" style="display:none;" height="300px" float="right" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/299346085&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+   <iframe class="songlink" id="song_lady" width="350px" style="display:none;" height="300px" float="right" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/299346080&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+   <iframe class="songlink" id="song_feelgood" width="350px" style="display:none;" height="300px" float="right" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/299346089&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    
     <div style="clear:right;"></div>
 
     <div style="clear:left;margin-top:100px;">
@@ -65,7 +108,7 @@
 </div>
 
 <div id="lyrics">
-    <p>
+    <p id="lyricsfill">
     Lyrics!
     </p>
 </div>
