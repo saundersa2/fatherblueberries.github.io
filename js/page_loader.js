@@ -93,7 +93,7 @@ function shop_load() {
     set_cookie("curpage", "shop");
     var center = $("#center");
     center.innerHTML = "";
-    center.load("shop.html");
+    center.load("shop.php");
 }
 
 function set_cookie(name, value) {
