@@ -97,3 +97,7 @@ p.inline-right {
     margin-bottom: 100px;
     z-index: 1;
 }
+
+.no-hover-underline:hover {
+    text-decoration: none;
+}
