@@ -147,7 +147,7 @@ p.inline-right {
   height: auto;
 }
 
-.overlay {
+.MTBoverlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -160,11 +160,11 @@ p.inline-right {
   background-color: #008CBA;
 }
 
-.MTBcontainer:hover .overlay {
+.MTBcontainer:hover .MTBoverlay {
   opacity: 1;
 }
 
-.text {
+.MTBtext {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -176,10 +176,4 @@ p.inline-right {
 
 div.bio {
     padding: 10px;
-}
-
-@media(max-width: 768px) {
-    body {
-        padding: 0;
-    }
 }
