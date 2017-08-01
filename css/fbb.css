@@ -22,6 +22,7 @@ nav#social {
 /*This is to make the nav vertically align in the middle*/
 div#anchor {
     line-height: 100px;
+    z-index: 10;
 }
 
 nav#left-nav {
@@ -33,6 +34,7 @@ nav#left-nav {
 div#center {
     text-align: center;
     background-color: #F6F6F6;
+    z-index: 0;
 }
 
 a#contact-link {
@@ -90,12 +92,12 @@ p.inline-right {
     height: 100px; 
     width: 100%;
     background: white;
-    z-index: 1;
+    z-index: 10;
 }
 
 .push {
     margin-bottom: 100px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .no-hover-underline:hover {
