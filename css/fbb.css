@@ -22,6 +22,7 @@ nav#social {
 /*This is to make the nav vertically align in the middle*/
 div#anchor {
     line-height: 100px;
+    z-index: 10;
 }
 
 nav#left-nav {
@@ -33,6 +34,7 @@ nav#left-nav {
 div#center {
     text-align: center;
     background-color: #F6F6F6;
+    z-index: 0;
 }
 
 a#contact-link {
@@ -66,6 +68,7 @@ div#homepage-overlay {
 
 div#meettheboys {
     padding-top: 40px;
+    padding-bottom: 5px;
 }
 
 div.small-box {
@@ -91,12 +94,12 @@ p.inline-right {
     height: 100px; 
     width: 100%;
     background: white;
-    z-index: 1;
+    z-index: 10;
 }
 
 .push {
     margin-bottom: 100px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .no-hover-underline:hover {
@@ -131,61 +134,46 @@ p.inline-right {
     color: #999;
 }
 
-.tz-gallery {
-    padding: 40px;
+
+.MTBcontainer {
+  display: inline-block;
+  position: relative;
+  width: 18%;
 }
 
-/* Override bootstrap column paddings */
-.tz-gallery .row > div {
-    padding: 2px;
+.MTBimage {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.tz-gallery .lightbox img {
-    width: 100%;
-    border-radius: 0;
-    position: relative;
+.MTBoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
 }
 
-.tz-gallery .lightbox:before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -13px;
-    margin-left: -13px;
-    opacity: 0;
-    color: #fff;
-    font-size: 26px;
-    font-family: 'Glyphicons Halflings';
-    content: '\e003';
-    pointer-events: none;
-    z-index: 9000;
-    transition: 0.4s;
+.MTBcontainer:hover .MTBoverlay {
+  opacity: 1;
 }
 
-
-.tz-gallery .lightbox:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background-color: rgba(46, 132, 206, 0.7);
-    content: '';
-    transition: 0.4s;
+.MTBtext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
-.tz-gallery .lightbox:hover:after,
-.tz-gallery .lightbox:hover:before {
-    opacity: 1;
-}
-
-.baguetteBox-button {
-    background-color: transparent !important;
-}
-
-@media(max-width: 768px) {
-    body {
-        padding: 0;
-    }
+div.bio {
+    padding: 10px;
 }

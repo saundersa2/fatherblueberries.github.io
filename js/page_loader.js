@@ -47,13 +47,7 @@ function index_load() {
     set_cookie("curpage", "index");
     var center = $("#center");
     center.innerHTML = "";
-    center.load("meet_the_band.html", function() {
-        $("#burt").flip();
-        $("#josiah").flip();
-        $("#chuck").flip();
-        $("#cj").flip();
-        $("#nick").flip();
-    });
+    center.load("meet_the_band.html");
 }
 
 function music_load() {
